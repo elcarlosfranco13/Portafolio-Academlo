@@ -9,6 +9,9 @@ html {
 
 :root {
   --navbar-height: 60px;
+  --color-primary: #242635;
+  --font-colortext: #d1ceca;
+  --font-colorheader:#34B0BE;
 }
 
 *,
@@ -16,9 +19,14 @@ html {
 *::after {
   box-sizing: inherit;
 }
+.body{
+  margin: 0;
+}
 .section {
   height: 100%;
+  color: var(--font-colorheader);
 }
+/* Diseño de navbar */
 .navbar {
   position: fixed;
   width: 100%;
@@ -42,7 +50,6 @@ html {
 .navbar__list {
   display: flex;
 }
-
 .a {
   text-decoration: none;
 }
@@ -50,7 +57,6 @@ html {
   color: #d1ceca;
   text-decoration: none;
 }
-
 .navbar__list {
   display: flex;
 }
@@ -58,6 +64,18 @@ html {
   max-width: 100%;
   width: 100%;
 }
+/* Diseño del Header */
+.header{
+  background-color: var(--color-primary);
+}
+.header__container{
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
 .wrapper {
   width: 100px;
   margin-top: var(--navbar-height);
@@ -67,20 +85,39 @@ html {
   .navbar__list {
     flex-direction: column;
     gap: 0.6rem;
+    margin: 2rem 0 1.5rem;
+    align-items: center;
+    
+  }
+  .navbar_button{
+    position:absolute;
+    right: 20px;
+    color: #d1ceca; 
+    cursor: pointer;
+
   }
 
   .navbar__menu {
-    top: 0;
+    top: -700%;
     position: absolute;
     width: 100%;
     background-color: #242635;
-    
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 12px 3px #000;
+    transition: all .3s ease;
   }
+  .navbar__menu.active {
+    top: 0;
+  }
+
   .btn--close{
     position: absolute;
     top: 9px;
-    right: 5px;
+    right: 20px;
+    color: #d1ceca; 
+    cursor: pointer;
   }
+
 }
 /* version escritorio */
 @media (min-width: 500px) {

@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <script src="./script.js"></script>
 </head>
 
 <body>
@@ -32,36 +33,39 @@
       </div>
     </div>
   </header>
-  <header class="header__container">
-    <div class="header_info">
-      <h2>
-        "Soy"
-        <hr>
-        <span>"Jorge"</span>
-      </h2>
-      <p>
-        "Marketing y"
-        <br>
-        diseñadorUX/UI
-      </p>
-      <div class="header__icons">
-        <a href="https://mx.linkedin.com/" target="_blank">
-          <i class='bx bxl-linkedin'></i>
-        </a>
-        <a href="https://www.instagram.com/?hl=es/" target="_blank">
-          <i class='bx bxl-instagram-alt'></i>
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-          <i class='bx bxl-twitter'></i>
-        </a>
+  <section class="header">
+    <div class="header__container">
+      <div class="header_info">
+        <h2>
+          "Soy"
+          <hr>
+          <span>"Jorge"</span>
+        </h2>
+        <p>
+          "Marketing y"
+          <br>
+          diseñadorUX/UI
+        </p>
+        <div class="header__icons">
+          <a href="https://mx.linkedin.com/" target="_blank">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://www.instagram.com/?hl=es/" target="_blank">
+            <i class='bx bxl-instagram-alt'></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class='bx bxl-twitter'></i>
+          </a>
+        </div>
       </div>
       <div class="header__image--container">
         <div class="header__image">
-          <img src="./photo mobile.png" alt="Model">
+          <img src="photo desktop.png" alt="Model">
         </div>
       </div>
     </div>
-  </header>
+  </section>
+
   <main>
     <div class="wrapper">
       <section id="aboutme" class="aboutme">Acerca de mi
@@ -112,7 +116,7 @@
       </section>
       <section id="portfolio" class="portfolio">Mi portafolio
         <div class="portfolio__container">
-          <img src="ejemplo3.jpg, ejemplo5.jpg, ejemplo1.jpg, ejemplo2.jpg">
+          <img src="ejemplo1.jpg">
         </div>
       </section>
       <section id="contact" class="contact">Contacto
@@ -130,6 +134,15 @@
 
     </div>
   </main>
+  <script>
+    btnClose.onclick = function () {
+      menu.classList.remove("active")
+    }
+    btnOpen.onclick = function () {
+      menu.classList.add("active")
+
+    }
+  </script>
 </body>
 
 </html>
