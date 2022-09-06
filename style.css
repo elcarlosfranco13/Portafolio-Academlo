@@ -21,9 +21,6 @@ html {
   box-sizing: inherit;
 }
 
-.section {
-  color: var(--font-colorheader);
-}
 /* Diseño de navbar */
 .navbar {
   position: fixed;
@@ -65,27 +62,43 @@ html {
 /* Diseño del Header */
 .header{
   background-color: var(--color-primary);
-  border: 1px solid red;
-  
-  
+  /* border: 1px solid red; */
 }
 
 
 .header__image--container{
   background-color: grey;
-  border: 5px solid lightblue;
+  /* border: 5px solid lightblue; */
   border-radius: 50%;
 }
 .header_info{
-border: 5px solid pink;
+/* border: 5px solid pink; */
 }
 .header__social{
-  border: 3px solid green;
+  /* border: 3px solid green; */
+  background-color: grey;
+  color: var(--color-primary);
+  border-radius: 9px;
 }
+.header__icons i{
+  background-color: var(--font-colortext);
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+.wrapper{
+  width: 100%;
+}
+
 
 .wrapper {
   width: 100px;
   margin-top: var(--navbar-height);
+}
+
+span{
+  color: var(--font-colorheader);
 }
 /* version movil */
 @media (max-width: 500px) {
@@ -127,29 +140,59 @@ border: 5px solid pink;
   }
   /* Header */
   .header{
-    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    padding: 3rem;
-    width: 98%;
+    padding: 4.2rem;
+    width: 100%;
 
   }
   .header__image--container{
-    position: relative;
     width: 380px;
     height: 380px;
-    margin-top: 0;
+    text-align: center;
+
   }
   .image img{
     height: 360px;
-    position: relative;
-    top: 0px;
-    right: -57px;
-    z-index: 1; 
-
+    right: -65px;
   }
+  .description__text{
+    font-size: 20px;
+    
+  }
+
+  .header_info{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header_info p{
+    color: var(--font-colortext);
+  }
+
+  .header_info h2{
+    color:#d1ceca;
+    width: 100%;
+    font-size: 40px;
+  }
+  .header__social{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    
+  }
+  .header__social i{
+    background-color: var(--font-colortext);
+    padding: .65rem .80rem;
+    font-size: 50px;
+    border-radius: 8px;
+  }
+
+
 
 /* version escritorio */
 @media (min-width: 500px) {
