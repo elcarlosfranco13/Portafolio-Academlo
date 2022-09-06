@@ -11,9 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <script src="./script.js"></script>
 </head>
-
 <body>
   <header class="navbar">
     <div class="navbar__container">
@@ -33,40 +31,43 @@
       </div>
     </div>
   </header>
-  <section class="header">
-    <div class="header__container">
-      <div class="header_info">
-        <h2>
-          "Soy"
-          <hr>
-          <span>"Jorge"</span>
-        </h2>
-        <p>
-          "Marketing y"
-          <br>
-          diseñadorUX/UI
-        </p>
-        <div class="header__icons">
-          <a href="https://mx.linkedin.com/" target="_blank">
-            <i class='bx bxl-linkedin'></i>
-          </a>
-          <a href="https://www.instagram.com/?hl=es/" target="_blank">
-            <i class='bx bxl-instagram-alt'></i>
-          </a>
-          <a href="https://twitter.com/" target="_blank">
-            <i class='bx bxl-twitter'></i>
-          </a>
+    <section class="header">
+        
+        <div class="header__image--container">
+          <div class="image">
+            <img src="photo.png" alt="Model">
+          </div>
+          </div>
         </div>
-      </div>
-      <div class="header__image--container">
-        <div class="header__image">
-          <img src="photo desktop.png" alt="Model">
+        <div class="header_info">
+          <h2>
+            "Soy"
+            <hr>
+            <span>"Jorge"</span>
+          </h2>
+          <p>
+            "Marketing y"
+            <br>
+            diseñadorUX/UI
+          </p>
+          <div class="header__icons">
+            <a href="https://mx.linkedin.com/" target="_blank">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=es/" target="_blank">
+              <i class='bx bxl-instagram-alt'></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <i class='bx bxl-twitter'></i>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <main>
+        <div class="header__social">
+          <i class='bx bxl-google'></i>
+          <i class='bx bxl-amazon'></i>
+          <i class='bx bxl-spotify'></i>
+        </div>
+    </section>
     <div class="wrapper">
       <section id="aboutme" class="aboutme">Acerca de mi
         <div class="description__container">
@@ -133,7 +134,6 @@
       </section>
 
     </div>
-  </main>
   <script>
     btnClose.onclick = function () {
       menu.classList.remove("active")
