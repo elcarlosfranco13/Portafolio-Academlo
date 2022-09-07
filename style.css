@@ -69,7 +69,7 @@ html {
 .header__image--container{
   background-color: grey;
   /* border: 5px solid lightblue; */
-  border-radius: 50%;
+  border-radius: 15px;
 }
 .header_info{
 /* border: 5px solid pink; */
@@ -93,9 +93,21 @@ html {
 
 
 .wrapper {
-  width: 100px;
+  /* width: 100px; */
   margin-top: var(--navbar-height);
 }
+
+.aboutme p{
+  color:var(--font-colortext)
+}
+.aboutme h2{
+  color: var(--font-colorheader);
+}
+.description__container{
+  color: var(--font-colortext)
+}
+
+
 
 span{
   color: var(--font-colorheader);
@@ -148,13 +160,13 @@ span{
 
   }
   .header__image--container{
-    width: 380px;
-    height: 380px;
+    width: 293px;
+    height: 363px;
     text-align: center;
 
   }
   .image img{
-    height: 360px;
+    height: 363px;
     right: -65px;
   }
   .description__text{
@@ -164,9 +176,6 @@ span{
 
   .header_info{
     width: 380px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
   .header_info p{
@@ -183,7 +192,15 @@ span{
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    padding: 3px;
+    margin: 2rem;
     
+  }
+  .header__icons{
+    gap: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
   }
   .header__social i{
     background-color: var(--font-colortext);
@@ -191,6 +208,16 @@ span{
     font-size: 50px;
     border-radius: 8px;
   }
+/* About me section */
+.aboutme{
+  text-align: center;
+  
+}
+.description__container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 
 
