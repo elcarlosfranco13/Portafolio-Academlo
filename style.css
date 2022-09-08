@@ -71,9 +71,7 @@ html {
   /* border: 5px solid lightblue; */
   border-radius: 15px;
 }
-.header_info{
-/* border: 5px solid pink; */
-}
+
 .header__social{
   /* border: 3px solid green; */
   background-color: grey;
@@ -91,12 +89,6 @@ html {
   width: 100%;
 }
 
-
-.wrapper {
-  /* width: 100px; */
-  margin-top: var(--navbar-height);
-}
-
 .aboutme p{
   color:var(--font-colortext)
 }
@@ -106,14 +98,58 @@ html {
 .description__container{
   color: var(--font-colortext)
 }
+.services__container{
+  font-weight: bold;
+}
+.services__container h2{
+  color: var(--font-colorheader);
+}
 
+.box__services{
+  background-color: var(--font-colortext);
+  color: var(--color-primary);
+  border-radius: 9px;
+}
 
+.skills h2{
+  color: var(--font-colorheader);
+  font-weight: bold;
+  text-align: center;
+}
+
+.skill__tech{
+  text-align: center;
+  background-color: var(--font-colortext);
+}
+#skicon{
+  font-size: 50px;
+  color: var(--color-primary);
+}
+
+.portfolio h2{
+  font-weight: bold;
+  color: var(--font-colorheader);
+}
+.contact h2{
+  font-weight: bold;
+  color: var(--font-colorheader);
+  text-align: center;
+}
+
+.contact__container{
+  font-weight: bold;
+
+}
+.contactIcon{
+  color: var(--font-colorheader);
+}
 
 span{
   color: var(--font-colorheader);
 }
+/* Media Querys */
 /* version movil */
-@media (max-width: 500px) {
+@media (max-width: 475px) {
   /* Diseño navbar */
   .navbar__list {
     flex-direction: column;
@@ -211,6 +247,7 @@ span{
 /* About me section */
 .aboutme{
   text-align: center;
+  margin-top: -2rem;
   
 }
 .description__container{
@@ -218,20 +255,107 @@ span{
   flex-direction: column;
   text-align: center;
 }
+/* Services section */
+.services{
+  margin-top: var(--navbar-height);
+}
 
+.services__container{
+  display: flex;
+    gap: 1.1rem;
+    width: 100%;
+    padding: 2px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
 
+}
+.box__services{
+  width: 60%;
+  height: 210px;
+  text-align: center;
+}
+/* Skills Section */
 
-/* version escritorio */
-@media (min-width: 500px) {
-  .navbar_button {
-    display: none;
-  }
+.skills{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: -25px;
+}
+.skills_container{
+display: grid;
+grid-template-columns: repeat(2, .5fr);
+grid-template-rows: repeat(2, .5fr);
+grid-column-gap: 0px;
+grid-row-gap: 20px;
+font-size:larger;
+margin-left: 47px;
+font-weight: bold;
+}
+.skill__tech{
+  width: 145px;
+  border-radius: 12px;
+  height: 105px;
+  border: 3px solid var(--font-colorheader);
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.portfolio__image img{
+  width: 91%;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.contact__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cellphone{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.email{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.email p{
+  font-weight: bold;
+  color: var(--font-colortext);
+}
+.cellphone p{
+  font-weight: bold;
+  color: var(--font-colortext);
+}
+
+#contactIcon{
+  font-size: 100px;
+  color: var(--font-colorheader);
+  border: 2px solid var(--font-colorheader);
+  background-color: var(--font-colortext);
+  border-radius: 8px;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 6rem;
+  font-weight: 500;
+  color: #e5e5e5;
+}
+
+@media (min-width: 400px) {
   .btn--close {
     display: none;
   }
-  .navbar__list {
-    gap: 1.3rem;
-    justify-content: center;
-    align-items: center;
-  }
-}
+/* version escritorio */
